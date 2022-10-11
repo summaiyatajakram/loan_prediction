@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="js/bootstrap.js">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+    .container{
+        padding:10px;
+        height:500px;
+        display: grid;
+        color:black;
+    
+    }
+    h1{
+        text-align:center;
+        text-shadow: 10px 10px 10px black;
+    }
+    h2{
+        text-transform: uppercase;
+    }
+    body{
+        background-image:url("{% static 'images/bg2.jpg' %}");
+        background-repeat: no-repeat;
+        width:100%;
+        height:100%;
+        background-size: cover;
+    }
+    button{
+        align-content: center;
+        color: #000;
+    }
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="col">
+            <fieldset> <h1>SIGNIN</h1></fieldset>
+                    <div class="col-lg-6">
+                    <label><span class="glyphicon glyphicon-user"></span>&nbsp;uname</label>
+                    <input type="text" class="form-control" placeholder="uname">
+                    </div>
+                    <div class="col-lg-6">
+                    <label><span class="glyphicon glyphicon-lock"></span>&nbsp;password</label>
+                    <input type="password" class="form-control" placeholder="password">
+                    <small><a href="#">forgot password?</a></small>
+                    </div>
+                    <br>
+                    &nbsp;
+                    <center><button>submit</button></center>
+                    <br>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
